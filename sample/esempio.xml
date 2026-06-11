@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica versione="FPR12" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente><IdPaese>IT</IdPaese><IdCodice>01234567890</IdCodice></IdTrasmittente>
+      <ProgressivoInvio>00042</ProgressivoInvio>
+      <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+      <CodiceDestinatario>ABC1234</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA><IdPaese>IT</IdPaese><IdCodice>01234567890</IdCodice></IdFiscaleIVA>
+        <CodiceFiscale>RSSMRA80A01H501U</CodiceFiscale>
+        <Anagrafica><Denominazione>Mario Rossi Software di Mario Rossi</Denominazione></Anagrafica>
+        <RegimeFiscale>RF19</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Via Alan Turing</Indirizzo><NumeroCivico>42</NumeroCivico>
+        <CAP>20100</CAP><Comune>Milano</Comune><Provincia>MI</Provincia><Nazione>IT</Nazione>
+      </Sede>
+      <Contatti><Email>mario@example.com</Email></Contatti>
+    </CedentePrestatore>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA><IdPaese>NL</IdPaese><IdCodice>123456789B01</IdCodice></IdFiscaleIVA>
+        <Anagrafica><Denominazione>ACME Cloud B.V.</Denominazione></Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Keizersgracht</Indirizzo><NumeroCivico>100</NumeroCivico>
+        <CAP>1015CW</CAP><Comune>Amsterdam</Comune><Nazione>NL</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2026-05-31</Data>
+        <Numero>12/2026</Numero>
+        <DatiBollo><BolloVirtuale>SI</BolloVirtuale><ImportoBollo>2.00</ImportoBollo></DatiBollo>
+        <Causale>Consulenza sviluppo software - Maggio 2026</Causale>
+        <ImportoTotaleDocumento>3252.00</ImportoTotaleDocumento>
+      </DatiGeneraliDocumento>
+      <DatiOrdineAcquisto><RiferimentoNumeroLinea>1</RiferimentoNumeroLinea><IdDocumento>PO-2026-117</IdDocumento></DatiOrdineAcquisto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <Descrizione>Sviluppo backend API e manutenzione infrastruttura (maggio 2026)</Descrizione>
+        <Quantita>120.00</Quantita><UnitaMisura>h</UnitaMisura>
+        <PrezzoUnitario>25.00</PrezzoUnitario><PrezzoTotale>3000.00</PrezzoTotale>
+        <AliquotaIVA>0.00</AliquotaIVA><Natura>N2.1</Natura>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <Descrizione>Reperibilità weekend</Descrizione>
+        <Quantita>1.00</Quantita><UnitaMisura>fc</UnitaMisura>
+        <PrezzoUnitario>250.00</PrezzoUnitario><PrezzoTotale>250.00</PrezzoTotale>
+        <AliquotaIVA>0.00</AliquotaIVA><Natura>N2.1</Natura>
+      </DettaglioLinee>
+    </DatiBeniServizi>
+    <DatiRiepilogo>
+      <AliquotaIVA>0.00</AliquotaIVA><Natura>N2.1</Natura>
+      <ImponibileImporto>3250.00</ImponibileImporto><Imposta>0.00</Imposta>
+      <RiferimentoNormativo>Operazione senza applicazione IVA ex art.1 c.54-89 L.190/2014</RiferimentoNormativo>
+    </DatiRiepilogo>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <ModalitaPagamento>MP05</ModalitaPagamento>
+        <DataScadenzaPagamento>2026-06-30</DataScadenzaPagamento>
+        <ImportoPagamento>3252.00</ImportoPagamento>
+        <IBAN>IT60X0542811101000000123456</IBAN>
+        <IstitutoFinanziario>Banca Esempio S.p.A.</IstitutoFinanziario>
+      </DettaglioPagamento>
+    </DatiPagamento>
+  </FatturaElettronicaBody>
+</p:FatturaElettronica>

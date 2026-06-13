@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FatturaPDF — FatturaPA XML → PDF</title>
   <meta name="description" content="Converti la fattura elettronica italiana (XML/p7m) in un PDF leggibile, in italiano o in inglese. Gratis, senza pubblicità, 100% nel tuo browser.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/fonts.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🧾</text></svg>">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js" defer></script>
+  <script src="vendor/jspdf.umd.min.js" defer></script>
+  <script src="vendor/jspdf.plugin.autotable.min.js" defer></script>
   <script type="module" src="js/app.js"></script>
 </head>
 <body>
@@ -75,6 +73,8 @@
 
   <footer class="footer">
     <a id="ghFoot" href="https://github.com/ebbbo/fatturapdf" target="_blank" rel="noopener" data-i18n="footerOpenSource"></a>
+    <span aria-hidden="true">·</span>
+    <a href="privacy.html">Privacy</a>
     <span aria-hidden="true">·</span>
     <span>AGPL-3.0 License</span>
     <span aria-hidden="true">·</span>
